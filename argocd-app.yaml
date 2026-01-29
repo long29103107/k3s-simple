@@ -1,0 +1,18 @@
+apiVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: hello-k3s
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/long29103107/hello-k3s
+    targetRevision: main
+    path: helm/hello-k3s
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: hello-k3s
+  syncPolicy:
+    automated:
+    prune: true
+    selfHeal: true

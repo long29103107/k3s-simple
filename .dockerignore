@@ -1,0 +1,52 @@
+# Git
+.git
+.gitignore
+
+# Docker
+Dockerfile
+docker-compose*
+*.dockerignore
+
+# Build outputs
+bin/
+obj/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# VS / VS Code
+.vs/
+.vscode/
+
+# Rider
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+logs/
+*.log
+
+# Test results
+TestResults/
+
+# NuGet cache (optional, usually don't copy)
+**/packages/
+
+# Node (nếu có frontend trong solution)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Env files
+.env
+.env.*
+
+# Secrets
+secrets.json
+appsettings.*.json
