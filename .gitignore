@@ -1,0 +1,79 @@
+## =========================
+## .NET / Visual Studio
+## =========================
+bin/
+obj/
+out/
+
+# Rider / VS / VS Code
+.vs/
+.idea/
+.vscode/
+
+# User-specific files
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Build results
+[Dd]ebug/
+[Dd]ebugPublic/
+[Rr]elease/
+[Rr]eleases/
+x64/
+x86/
+ARM/
+ARM64/
+
+# NuGet
+*.nupkg
+*.snupkg
+.nuget/
+packages/
+
+# Logs
+*.log
+
+# Test results
+TestResults/
+
+# Publish
+publish/
+app.publish/
+
+# EF / tooling
+Migrations/*.Designer.cs
+
+## =========================
+## Kubernetes
+## =========================
+
+# Local kube config
+.kube/
+kubeconfig*
+config/kubeconfig*
+
+# Helm
+charts/*/charts/
+charts/*/Chart.lock
+*.tgz
+
+# Kustomize
+kustomization.yaml.bak
+
+# Secrets (NEVER COMMIT)
+*secret*.yaml
+*secrets*.yaml
+secrets/
+.env
+.env.*
+
+# Generated manifests
+*.rendered.yaml
+*.generated.yaml
+
+# Terraform (nếu có)
+.terraform/
+*.tfstate
+*.tfstate.*
