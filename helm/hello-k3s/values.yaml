@@ -1,6 +1,6 @@
 image:
   repository: longnguyen29102000/hello-k3s
-  tag: v1
+  tag: latest
   pullPolicy: Always
 
 service:
