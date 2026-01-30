@@ -1,6 +1,6 @@
 image:
-  repository: ghcr.io/yourname/hello-k3s
-  tag: "local"
+  repository: ghcr.io/longnguyen29102000/hello-k3s
+  tag: "latest"
 
 service:
   port: 8080
