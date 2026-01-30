@@ -1,19 +1,19 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: hello-k3s
+  name: {{ .Values.name }}
 spec:
-  replicas: 1
+  replicas: {{ .Values.replicaCount }}
   selector:
     matchLabels:
-      app: hello-k3s
+      app: {{ .Values.name }}
   template:
     metadata:
       labels:
-        app: hello-k3s
+        app: {{ .Values.name }}
     spec:
       containers:
-        - name: hello-k3s
+        - name: {{ .Values.name }}
           image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
           imagePullPolicy: {{ .Values.image.pullPolicy }}
           ports:

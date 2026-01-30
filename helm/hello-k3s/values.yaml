@@ -1,3 +1,5 @@
+name: hello-k3s
+replicaCount: 1 
 image:
   repository: longnguyen29102000/hello-k3s
   tag: latest
@@ -5,3 +7,4 @@ image:
 
 service:
   port: 8080
+  targetPort: 8080
