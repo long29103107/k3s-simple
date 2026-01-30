@@ -5,14 +5,21 @@ metadata:
   namespace: argocd
 spec:
   project: default
+
   source:
     repoURL: https://github.com/long29103107/hello-k3s
     targetRevision: main
     path: helm/hello-k3s
+    helm:
+      releaseName: hello-k3s
+
   destination:
     server: https://kubernetes.default.svc
-    namespace: hello-k3s
+    namespace: hello
+
   syncPolicy:
     automated:
-    prune: true
-    selfHeal: true
+      prune: true
+      selfHeal: true
+    syncOptions:
+      - CreateNamespace=true
