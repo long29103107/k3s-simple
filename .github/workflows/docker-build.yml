@@ -25,4 +25,3 @@ jobs:
           push: true
           tags: |
             longnguyen29102000/hello-k3s:latest
-            longnguyen29102000/hello-k3s:${{ github.sha }}
