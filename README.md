@@ -8,5 +8,5 @@ kubectl delete namespace hello
 kubectl create namespace hello
 
 kubectl rollout restart deployment hello-k3s -n hello
-
+helm upgrade hello-k3s ./helm/hello-k3s -n hello
 ```
