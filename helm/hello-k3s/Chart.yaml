@@ -1,5 +1,5 @@
 apiVersion: v2
-name: hello-k3s
+name: {{ .Values.name }}
 description: Mono repo .NET Core + K3s
 type: application
 version: 0.1.0
